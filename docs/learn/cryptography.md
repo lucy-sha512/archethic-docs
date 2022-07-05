@@ -7,6 +7,8 @@ Archethic network through the usage of TransactionChains is leveraging an adapta
 
 ## Quantum-Safe
 
+The non-disclosure characteristic of public keys combined with the necessity to simultaneously possess many temporary private keys in order to generate a transaction should make it far more difficult for a quantum computer to "break" private keys.
+
 ### Non-Discolure of public keys
 
 Archethic [TransactionChains](/learn/transaction-chain) uses a non-disclosure mechanism of public keys using chains of cryptography. 
@@ -32,6 +34,7 @@ Each public key is prepended by some additional bytes to inform some metadata or
 This includes:
 - a byte to indicate the elliptic curve used (i.e Ed25519, NIST, secp256k1)
 - a byte to indicate the origin of the generation (i.e software, hardware, ...)
+
 
 ### Hashes
 
