@@ -2,45 +2,50 @@
 id: arch-consensus
 title: ARCH consensus
 ---
+Atomic Rotating Commitment Heuristic, `ARCH` is the mechanism behind which ArchEthic Blockchain achieves Consensus while validating a transaction.
+* Atomicity for Security: Each transaction is automatically and absolutely validated, meaning that during validation, there is either acceptance or refusal.
+* Heuristic Storage for Data Consistency: Heuristic algorithms store transactions in a distributed manner while guaranteeing access to the most recent write and maximum availability.
+* Rotating Election for Fault Tolerance: Node election for storage and validation is constantly changing, eliminating the possibility of network dominance by one or more parties.
 
-Archethic Blockchain is using a new consensus called `ARCH` (Atomic Rotating Commitment Heuristic) for an uncompromising consensus to support high scalability and high throughput.
-
-Archethic Blockchain is based on three properties:
-
-* Security: Each transaction is validated atomically
-* Data consistency: Algorithms ensure to access the latest write and maximum availability
-* Fault tolerance: Allow nodes to operate independently even in case of disaster
-
-
-**ARCH** consensus is defined by three concepts:
-- `Atomic Commitment`: The most absolute form a consensus which implies 100% of concordant responses for the acceptance or refusal of the transaction validation
-- `Heuristic`: Set of algorithms which manages the entire network, allowing to elect in a decentralized and coordinated way the nodes in charge to validate or store the transaction chains
-- `Rotating`: Node election is constantly changing. No nodes can predict which nodes will validate the transaction before its arrives.
+Arch Consensus is conceptualized around Atomic Committment, Heuristic algorithm and Rotating Election.
 
 ## Atomic Commitment
 
-Archethic Blockchain is based on `Hypergeometric distribution` laws which from an unpredictable election and formal consensus make it possible to obtain with certainty (99.99999999%) the same answer by querying 197 nodes as would be obtained by querying 100 000 nodes.
+The Archethic Blockchain is built on "Hypergeometric distribution" principles, which, in the presence of an unpredictable election and formal consensus, enable one to achieve, with a 99.99999999 percent degree of certainty, the same result from 197 nodes as one would from 100,000 nodes.
 
-Therefore, it makes possible the consensus establishment with a small part of nodes and can resist to attacks of 90% of malicious nodes. 
+Since it can withstand attacks from 90% of malicious nodes, it enables consensus establishment with a small number of nodes.
 
-The risk of related availability is ensured by a strict management of the disruptive nodes, which are banished after investigation of the origin of the disagreement.
+By strictly controlling disruptive nodes, which are expelled after an assessment of the source of the conflict, the danger of linked availability is ensured.
 
-By supporting more 90% of malicious nodes into its network, `ARCH` consensus is above aeronautical or nuclear standard, thanks to the `Atomic Commitment` which request the total agreement of the validation nodes and from a `Malicious Detection` algorithm to detect the malicious nodes.
+By supporting more than 90% of malicious nodes into its network, `ARCH` consensus is above aeronautical or nuclear standard, thanks to the `Atomic Commitment` which request the total agreement of the validation nodes and from a `Malicious Detection` algorithm to detect the malicious nodes.
+
+## Heuristic Algorithm
+Heuristic Algorithms are made up of softwares (interpreters, libraries, etc.) and configuration files.
+These are stored in a decentralized manner otherwise known as smart contract chains to eliminate the problem of software integrity running on different nodes and achieve holistic decentralized network.
+
+The Heuristic algorithm is the core behind  unpredictable yet reproducible election called Rotating election.
 
 
 ## Rotating Election
-
 Each rotating election is unpredictable, but still verifiable and reproducible.
-The rotating algorithm sort a list of nodes based on:
-- `Hash of transaction`: Unpredictable until the transaction arrives
-- `Daily nonce`: Secret shared between the authorized nodes and renewed daily
-- `Node public key`: Last node public key
+The rotating algorithm sort a list of nodes by computing the `Rotating Keys`. It contains an element of unpredicbility as well an element that is shared among all the nodes for reproducing the keys.
+The following contents are used for computing Rotating keys.
+- `Hash of transaction`: Unpredictable until the transaction arrives.
+- `Daily nonce`: Secret shared between the authorized nodes and renewed daily.
+- `Node public key`: Last node public key 
 
-The rotating election produces a proof, named: `Proof of Election` which can be verified by any other nodes to ensure the right election of nodes.
+Rotating Keys = Hash(Node public key, Daily Nonce, Hash(Transaction))
+
+The purpose of the rotating keys calculation is to provide an unpredictable and repro-
+ducible ordered list of the allowed nodes. The scheduling thus obtained allows each
+of the nodes to find autonomously and share the list of nodes that will be in charge of
+the validation of the transaction.
+They produces a proof, named: `Proof of Election` which can be verified by any other nodes to ensure the right election of nodes.
 
 From this algorithm, we get a list of nodes which can be filtered according to the constraints of the validation of the transaction.
 - P2P availability
 - Geographical distribution
+- Availability of the nodes
 
 ## Workflow
 
