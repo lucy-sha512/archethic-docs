@@ -54,11 +54,11 @@ But because Archethic is using a rotating sharding implementation, the nodes inv
 
 ```mermaid
 graph TD
-    A[Explorer] -->|Subscribe to updates| B{BeaconChains}
-    B -->D[Subset 0]
-    B -->E[Subset 1]
-    B -->F[Subset 2]
-    F -->|Notify new transaction|A
+    A[Explorer] -->|Subscribe to updates| B{BeaconChains};
+    B -->D[Subset 0];
+    B -->E[Subset 1];
+    B -->F[Subset 2];
+    F -->|Notify new transaction|A;
     
-    X[Transaction Validator] -->|Attest transaction|F
+    X[Transaction Validator] -->|Attest transaction|F;
 ```

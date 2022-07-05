@@ -3,9 +3,9 @@ id: replication-attestation
 title: Replication attestation
 ---
 
-How to ensure a minimun of confirmation from the storage nodes to ensure the data availability of a given transaction.
-If we are not providing this kind of mechanism, we can end up into a network split / mistmatch where shards and beacon aren't cross linked.
-Also we do not want to overload the beacon chain by broadcasting it with hundred of messages for single transaction summary.
+How to ensure that a particular transaction has at least one confirmation from the storage nodes to guarantee data availability.
+Without this kind of approach, we risk creating a network split or mismatch where beacons and shards aren't connected to one another.
+Additionally, we don't want to broadcast hundreds of messages for a single transaction summary, which would overload the beacon chain.
 
 ## Heuristic solution
 
@@ -21,8 +21,7 @@ will be valid as 3 attestations with their respective confirmations.
 
 ### Nested replications
 
-Moreover, when we are dealing with recipients for transfer or smart contract calls, we want to support the recipients shards will be notified 
-only when the main transaction is validated and stored.
+ When we are dealing with recipients for transfer or smart contract calls, we want to support the recipients shards will be notified only when the main transaction is validated and stored.
 So for example, the replication can be splitted by levels: [ Main Chain ] -> [ Recipient Chains]
 
 Then the welcome node will be notified by a validation node with a given number of replica confirmations.
