@@ -3,14 +3,14 @@ id: ecosystem
 title: Ecosystem
 ---
 
-The technical and functional parameters that make Archethic unique and ready for global adoption:
+The technical and functional parameters that make Archethic unique and ready for global adoption are as follows:
 
 ## Limitless network
 
 Archethic is outperforming the market standards with some key indicators: 
-- a scalability >1 Million TPS
+- scalability >1 Million TPS
 - a validation time < 5 sec
-- capability to handle up to 90% maliciousness
+- the capability to handle up to 90% maliciousness
 - 3.6 billion times less energy consumption than Bitcoin and 0.1% transaction fee
 
 
@@ -29,11 +29,11 @@ Beyond just PoW (51%) or dBFT (66%), Archethic implements a consensus that can h
 
 ## Unlimited applications
 
-Our blockchain platform aims to replace and to improve all current applications with a comprehensive and open ecosystem, allowing people to move from the trust imposed by centralized to a decentralized system.
+Our blockchain platform aims to replace and improve all current applications with a comprehensive and open ecosystem, allowing people to move from the trust imposed by centralized to a decentralized system.
 
-- `AEWweb`: One app for website maintenance, security, handling and costing on the blockchain at a fraction of the current hosting costs!
-- `AEMail`: Email Redefined! An all-in-one email, messaging, wallet and payments app that provides the full suite for a user. Coming soon
-- `AENFT`: Archethic embeds in its transaction structure NFTs and are therefore native to the network. However a decentralized marketplace reimagined in collaboration with artists will come soon !
+- `AEWweb`: One app for website maintenance, security, handling, and costing on the blockchain at a fraction of the current hosting costs!
+- `AEMail`: Email Redefined! An all-in-one email, messaging, wallet, and payments app that provides the full suite for a user. Coming soon
+- `AENFT`: Archethic embeds in its transaction structure NFTs and are therefore native to the network. However, a decentralized marketplace reimagined in collaboration with artists will come soon!
 - And so more...
 
 ## Decentralized Identity
@@ -60,9 +60,9 @@ It considers Archethic as a project – where a solid technical foundation is a 
 
 To provide an inclusive, generously incentivized, and on-chain Governance, Archethic is based on those four pillars:
 
-- **Decentralized Identity & Proof of Identity**: An essential prerequisite for a human-inclusive governance in blockchain is the ability of the ecosystem to uniquely identify a person and to integrate that person into a relevant group.
+- **Decentralized Identity & Proof of Identity**: An essential prerequisite for human-inclusive governance in the blockchain is the ability of the ecosystem to uniquely identify a person and integrate that person into a relevant group.
 
-- **Modifiable**: Each algorithm can be updated through transactions allowing the network to version (git...) all updates, and also to force each update according to a specific governance (voting quorum, veto right...).
+- **Modifiable**: Each algorithm can be updated through transactions allowing the network to version (git...) all updates, and also to force each update according to specific governance (voting quorum, veto right...).
 
 - **On-Chain Governance**: The code used by the nodes is hosted by the Blockchain itself, so the network is certain that all the nodes will immediately apply the decided updates along with the ability to test the impact of a new feature in real-time.
 
@@ -70,9 +70,8 @@ To provide an inclusive, generously incentivized, and on-chain Governance, Arche
 
 ### Open enhancements
 
-We are an open-source and decentralized protocol which decision involves community votes and suggestions.
+We are an open-source and decentralized protocol in which decision involves community votes and suggestions.
 
-In that sense, we have created **Archethic Improvement Proposals (AEIPs)** to offer opportunity to contribute in the project by proposing technical, informational and process-based enhancements. 
+In that sense, we have created **Archethic Improvement Proposals (AEIPs)** to offer the opportunity to contribute to the project by proposing technical, informational, and process-based enhancements. 
 
 If you are interested, please take on the [AEIP repository](https://github.com/archethic-foundation/aeip)
-

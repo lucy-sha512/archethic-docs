@@ -9,7 +9,7 @@ UCO is based on the principle of controlled supply and creating demand.
 
 ## Fibonacci Golden Token Economics
 
-To achieve the objective of a self-sustaining crypto economy, the token distribution has been redefined. The transactions growth, users growth ans developers growth based on the set of commissioned applications has been analysed. The cost of running the nodes has been calculated and the adoption and incentivization has been designed to ensure the sustenance of nodes.
+To achieve the objective of a self-sustaining crypto economy, token distribution has been redefined. The transactions growth, users growth, and developers' growth based on the set of commissioned applications have been analyzed. The cost of running the nodes has been calculated and the adoption and incentivization have been designed to ensure the sustenance of nodes.
 
 <br />
 

@@ -39,21 +39,21 @@ Archethic Blockchain solved this issues in the following way:
 
 <details>
   <summary>Real Sharded Network</summary>
-		Archethic is using sharding technology to ensure distribution of transaction processing and storage to provide
+		Archethic uses sharding technology to ensure distribution of transaction processing and storage to provide
 		a very high scalability.
 </details>
 
 <details>
   <summary>Next-generation consensus</summary>
-		Archethic is using an universal consensus called ARCH based on Atomic Commitment using Heuristic Rotating election
+		Archethic employs a universal consensus called ARCH based on Atomic Commitment using Heuristic Rotating election
 		of a tiny set of validation nodes providing the highest level of security
 </details>
 
 <details>
   <summary>Optimized Replication and Self Repair</summary>
-		Every transaction will be stored in a deterministic way on a set of nodes using a sharded storage layer.
+		Every transaction is stored in a deterministic way on a set of nodes using a sharded storage layer.
 		<br />
-		Thus, every node will autonomously know all the nodes for a given transaction and ease the network by only interrogating the closest elected nodes.
+		Thus, every node  autonomously know all the nodes for a given transaction and ease the network by only interrogating the closest elected nodes.
 </details>
 
 <details>
