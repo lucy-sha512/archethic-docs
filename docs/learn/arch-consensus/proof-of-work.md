@@ -4,32 +4,38 @@ title: Proof of Work
 ---
 
 
-In networks like Bitcoin `Proof of Work` to ensure an unpredictable and pseudo random election of block validation (mining).But this technique requires a lot of energy consumption and can still be subject to exploit by HashRate control.
+"Proof of Work" ensures an unpredictable and pseudo-random selection of block validation in networks like Bitcoin (mining). But this method uses a lot of energy, and it can still be used against you by hashRate control.
 
-Archethic Blockchain is using a new kind of `Proof of Work` based on  the authenticity of the transaction origination devices. The transactions in Archethic Blockchain is signed by the device from which it is originated refered as `Origin Signature`
-This allows the additional security requirements on transaction validation like:
-- prohibit any transaction even in case of key theft
-- allow user to consult their balance on any smartphone, but generate a transaction only on a trusted device
-- enable the organizers of an election to ensure biometric identity of a voter
+Based on the reliability of the transaction origination devices, Arch Ethic Blockchain employs a novel type of "Proof of Work." The device from which a transaction originated, known as the "Origin Signature," signs the transaction in the Arch Ethic Blockchain.
+This allows for the additional security requirements for transaction validation, such as: 
+- preventing any transactions in the event of key theft.
+- permit the user to check their balance on any smartphone, but only allow transactions to be generated on vetted devices
+- enable the organizers of an election to ensure the biometric identity of a voter.
 
-The `Proof Of Work` consists of finding the right public key associated to the `Origin Signature` of the transaction
-from a list of public keys known by the network. This involves a search on a
-finite set of public keys ensuring that the device is definitely authorized to generate the
-transaction and that, at the same time, the nodes able to find that key are authorized
-and know the Shared Secrets of the Nodes.
-This verification is performed during the `Validation Stamp` creation by the `Coordinator Node` and ensure the device is authorized to generate the transaction
-Brute forcing public keys  not viable herE
+The figure below describes a typical unvalidated transaction on Arch Ethic Blockchain. 
+```
+|-----------|------|------|---------------------|--------------------|------------------|
+|  Address  | Type | Data | Previous public key | Previous signature | Origin signature |
+|-----------|------|------|---------------------|--------------------|------------------|
+                                                                            |
+                                                                            |
+                                                                    signature from the device that orginated the transaction    
+```
+
+Finding the right public key from a list of public keys that are known to the network and associated with the transaction's "Origin Signature" constitutes the "Proof Of Work." 
+
+This requires conducting a search on a limited number of public keys to confirm that the device has the necessary permissions to create the transaction. The nodes can simultaneously determine which keys are authorised and are aware of their shared secrets.
+
+This verification is performed during the `Validation Stamp` creation by the `Coordinator Node` and ensures the device is authorized to generate the transaction. Brute forcing public keys is not practical in this situation.
 
 
-
-Just like any other actor into the system, devices will have their own transaction chain allowing them to update their keys. 
+Just like any other actor in the system, devices will have their transaction chain allowing them to update their keys. 
 
 
 :::info
-Each origin device public keys are grouped by family which helps nodes to determine which set of keys, must be played to produce the Proof of Work. (i.e: software, usb, biometric).
+Each origin device's public keys are grouped by a family which helps nodes to determine which set of keys, must be used to produce the Proof of Work. These families are either software keys, USB keys or Biometric keys.
 :::
 
 :::info
-Each origin device public key is encrypted and renewed by the network ensuring confidentiality and authenticity of devices.
+Each origin device's public key is encrypted and renewed by the network ensuring confidentiality and authenticity of devices.
 :::
-

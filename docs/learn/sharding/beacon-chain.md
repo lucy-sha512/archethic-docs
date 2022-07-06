@@ -3,15 +3,10 @@ id: beacon-chain
 title: Beacon Chain
 ---
 
-The "Sharding" mechanism is being used by Archethic Blockchain to provide scalability in terms of storage and validation.
-
-However, a "Beacon Chain" is employed to maintain a global synchronization and reference because it is impossible to know all the transactions in a well-distributed network with well-sharded nodes.
-
 ## Concepts
 
-`Beacon Chain` is used as tracer/marker of a global state but to face some scalability issues, Archethic Blockchain is using `Sharding` also for the `BeaconChain`.
-
-This means that the `Beacon Chain` is sharded and divided into a `subset` defined by the transaction's address and a given date.
+`Beacon Chain` is used as a tracer/marker of a global state but faces some scalability issues.
+ Arch Ethic Blockchain uses `Sharding` for the `BeaconChain` as well. Eventually, `Beacon Chain` is sharded and divided into a `subset` defined by the transaction's address and a given date.
 
 For example, a transaction's address starting by `0F` for a given day, will not be stored on the same subset as a transaction's address starting by `9F` for the same day.
 
@@ -24,7 +19,7 @@ For each Beacon Chain interval, a new slot is generated referencing all the tran
 
 At the end of the day, a transaction chain is formed, and the last transaction is computed to generate a summary of the current day for a given subset.
 
-Because each transaction has its storage nodes, `Beacon Chains` are balanced between the storage nodes to ensure better scalability and distribution.
+ Since each transaction has its storage nodes, `Beacon Chains` are balanced between the storage nodes to ensure better scalability and distribution.
 
 ## Status and Network Coordinates of nodes
 

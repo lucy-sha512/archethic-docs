@@ -2,22 +2,22 @@
 id: arch-consensus
 title: ARCH consensus
 ---
-Atomic Rotating Commitment Heuristic, `ARCH` is the mechanism behind which ArchEthic Blockchain achieves Consensus while validating a transaction.
-* Atomicity for Security: Each transaction is automatically and absolutely validated, meaning that during validation, there is either acceptance or refusal.
-* Heuristic Storage for Data Consistency: Heuristic algorithms store transactions in a distributed manner while guaranteeing access to the most recent write and maximum availability.
-* Rotating Election for Fault Tolerance: Node election for storage and validation is constantly changing, eliminating the possibility of network dominance by one or more parties.
+Atomic Rotating Commitment Heuristic, `ARCH` is the mechanism behind which Arch Ethic Blockchain achieves Consensus while validating a transaction.
+*  Security: Each transaction is automatically validated, meaning that during validation, there is either acceptance or refusal.
+*  Data Consistency: Heuristic algorithms store transactions in a distributed manner while guaranteeing access to the most recent write and maximum availability.
+* Fault Tolerance: Node election for storage and validation is constantly changing, eliminating the possibility of network dominance by one or more parties.
 
-Arch Consensus is conceptualized around Atomic Committment, Heuristic algorithm and Rotating Election.
+Arch Consensus is conceptualized around Atomic Commitment, Heuristic algorithm, and Rotating Election.
 
 ## Atomic Commitment
 
-The Archethic Blockchain is built on "Hypergeometric distribution" principles, which, in the presence of an unpredictable election and formal consensus, enable one to achieve, with a 99.99999999 percent degree of certainty, the same result from 197 nodes as one would from 100,000 nodes.
+The Arch Ethic Blockchain is built on `Hypergeometric distribution` principles, which, in the presence of an unpredictable election and formal consensus, enable one to achieve, with a 99.99999999 percent of certainty, the same result from 197 nodes as one would from 100,000 nodes.
 
 Since it can withstand attacks from 90% of malicious nodes, it enables consensus establishment with a small number of nodes.
 
 By strictly controlling disruptive nodes, which are expelled after an assessment of the source of the conflict, the danger of linked availability is ensured.
 
-By supporting more than 90% of malicious nodes into its network, `ARCH` consensus is above aeronautical or nuclear standard, thanks to the `Atomic Commitment` which request the total agreement of the validation nodes and from a `Malicious Detection` algorithm to detect the malicious nodes.
+By supporting more than 90% of malicious nodes into its network, `ARCH` consensus is above aeronautical or nuclear standard, thanks to the `Atomic Commitment` which requests the total agreement of the validation nodes and from a `Malicious Detection` algorithm to detect the malicious nodes.
 
 ## Heuristic Algorithm
 Heuristic Algorithms are made up of softwares (interpreters, libraries, etc.) and configuration files.

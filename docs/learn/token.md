@@ -3,26 +3,24 @@ id: token
 title: Tokens
 ---
 
-The token is an important feature of Archethic. 
-Nowadays, our world is transforming towards digitalization and tokenization with new use cases and trends (royalties, collection, proof of ownership, etc.)
+An essential component of Arch Ethic is the `token`.
+With new use cases and trends, our world is currently evolving toward digitalization and tokenization (royalties, collection, proof of ownership, etc.)
 
-Archethic allows users to create and transaction with an unlimited-defined (custom) token natively.
+Users of Arch Ethic have the native ability to create and transact with an unlimited-defined (custom) token.
 
 ## Native 
 
-Archethic tokens are considered as native as for developers, there is no need to create a smart contract to mint or transfer tokens.
+Arch Ethic tokens are considered as native  for developers, there is no need to create a smart contract to mint or transfer tokens.
 
-The transaction's structure support - since its design, asn extension of the ledger model (more than UCO-only transaction)
+The transaction's structure support  its design  and extension of the ledger model (more than UCO-only transaction)
 
-All the layers of complexity have been removed to make them efficient and performant.
-
-Because of this, the transfer of tokens is simple as a transfer of UCO (just UTXO), making it fast and cheap. 
+To make them effective and performant, all traces of complexity have been eliminated. This makes the transfer of tokens as straightforward as the transfer of UCO (just UTXO), making it quick and affordable.
 
 ## Standardized
 
-Archethic's tokens are also unified through a specification to help implementers, developers and users to have a clear understanding of their definition
+Arch Ethic's tokens are also unified through a specification to help implementers, developers and users to have a clear understanding of their definition.
 
-For more details please take a look at the [AEIP-2](https://github.com/archethic-foundation/aeip/blob/main/AEIP-2.md)
+For more details please take a look at the [AEIP-2](https://github.com/Arch Ethic-foundation/aeip/blob/main/AEIP-2.md)
 
 ## Creation
 

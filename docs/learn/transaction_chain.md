@@ -3,16 +3,16 @@ id: transaction-chain
 title: TransactionChains
 ---
 
-Billions of transactions cannot be chained together into a single branch of chained blocks due to resource constraints.
-ArchEthic network resolves the above constraint by the use of transaction chains instead of blocks of  transactions. In other words the transactions in Archethic Blockchain are atomic i.e. each block contains only one transaction and each transaction will be chained in its own chain and validation evidences.
+Due to resource limitations, it is not possible to chain together billions of transactions into a single branch of chained blocks.
+By using transaction chains rather than blocks of transactions, the Arch Ethic network overcomes the above constraint.
+The transactions in  Arch Ethic Blockchain are atomic. There is only one transaction in each block, and each transaction has its validation evidence and chain.
 
-## Transaction In ArchEthic Blockchain
+## Transaction In Arch Ethic Blockchain
 
 - ### Pending transaction
 
 A pending transaction is a transaction that does not have validation.
-Its structure is described as below:
-
+The structure of a pending transaction is described below:
 ```
 |-----------|------|------|---------------------|--------------------|------------------|
 |  Address  | Type | Data | Previous public key | Previous signature | Origin signature |
@@ -50,8 +50,8 @@ Its structure is described as below:
 
 - ### Validated transaction
 
-A validated transaction is a pending transaction completed with the validation proofs required by the Heuristic Algorithms. 
-Those are defined by the given structure:
+A pending trnsaction with validation proofs is known as `validated transaction`.
+The figure below describes the structure of a validated transaction
 
 ```
 |------------------|-------------------------|
@@ -93,29 +93,8 @@ Those are defined by the given structure:
 ## Transaction Chains
 The validated transactions are stored as a chain that can only be updated from last validated transaction in the chain.
 * The address of any transaction in the same chain could be used as a destination address, it is not necessary to specify the last transaction in the chain.
-* Once the public key is disclosed, it is con-
-sidered expired, only the hash of the public key of the next transaction address is announced, which allows to keep the public key secret until the next transaction on this
-same chain.
+* Once the public key is disclosed, it is considered expired.
 
-### Types of Transaction Chains
-
-1. Network Transaction Chains/ Smart Contract Chains
-To achieve absolute decentralization, the Heuristic algorithm for managing the network elections for storage  and validation etc are stored in form of transaction chain or smart contract chains. These chains are part of the Network transaction chains.
-2. Node identity Identity Chain
-Each node needs to be authorised and validated by a transaction chain in order to join the network. Therefore, the node must renew a new transaction on its chain as soon as its key has expired or when data required for the network has changed (IP, port, protocol, etc.)
-These transaction associated with the entry and renewal of nodes is stored in node identity chains
-3. Identity chain of the person
-Similar to node identity chain, the identity chain of the person stores the entry and renewal transactions.
-4. Identity chains for Wallet
-Decentralized wallet in Archethic blockchain stores different wallets . Whenever any wallet is initialized or accessed transaction is created n the specific wallet chain.
-
-
-
-
-### Updating a Transaction Chain
-
-* When adding a new validated transaction to the end of a chain of transactions. The nodes responsible for storing the chain before the introduction of the new transaction will then be able to halt their data synchronisation on the chain. The referenced storage nodes, which have been chosen from the address of this most recent transaction, are the new storage nodes.
-* A nearly infinite number of transactions/second can be sent to the same chain, but a new transaction on a given transaction chain must wait until the previous one's validation is complete (1 to 3 seconds).
 
 
 ## Principles
@@ -143,22 +122,18 @@ The nodes involved in validating a "validated transaction" that is ultimately de
 :::
 
 
-:::note Ananmoly Management
-Any elected node involved in the validation or storage process may submit a "potential anomaly" to a validation pool in the event that there is disagreement or inconsistency regarding the validity of a "transaction in the process of validation." The validation pool will then determine whether the transaction is valid and, if necessary, determine the cause of the anomaly.
-:::
-
-:::note Address resolution
-Any addresses of a transaction chain can be used as destination address.
-It's not necessary to specify the last transaction address in the chain.
+Addressing solution
+Any transaction chain address may be used as the destination address.
+The chain's final transaction address need not be specified.
 :::
 
 :::note Stateless transactions
-Transaction are using an *UTXO* (Unspent Transaction Output) model so, a transaction cannot change state.
-There is no reality outside the validated transactions
+A transaction cannot change state since it uses the *UTXO* (Unspent Transaction Output) model.
+Nothing exists outside of the verified transactions
 :::
 
 :::note UTXO mining
 List of unspent outputs does not need to be specified by the sender of the transaction
-all unspent outputs will be reintegrated directly into the last transaction.
+All unspent outputs will be reintegrated directly into the last transaction.
 :::
 
