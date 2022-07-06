@@ -4,8 +4,8 @@ title: TransactionChains
 ---
 
 Due to resource limitations, it is not possible to chain together billions of transactions into a single branch of chained blocks.
-By using transaction chains rather than blocks of transactions, the Arch Ethic network overcomes the above constraint.
-The transactions in  Arch Ethic Blockchain are atomic. There is only one transaction in each block, and each transaction has its validation evidence and chain.
+By using transaction chains rather than blocks of transactions,  Arch Ethic network overcomes the above constraint.
+The transactions in  Arch Ethic Blockchain are atomic meaning there is only one transaction in each block, and each transaction has its own validation evidence and chain.
 
 ## Transaction In Arch Ethic Blockchain
 
