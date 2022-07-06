@@ -108,8 +108,7 @@ The validated transactions are stored as a chain that can only be updated from l
 
 
 :::note Liveness
-Each validated transaction is stored as a chain than can only be updated from the last validation transaction in the chain
-The last transaction on a chain becomes the *authoritative* transaction. 
+Each validated transaction is stored as a chain than can only be updated from the last validation transaction in the chain. The last transaction on a chain becomes the *authoritative* transaction. 
 :::
 
 :::note Quantum resistant
@@ -118,7 +117,9 @@ This allows the next public key to be kept until the next transaction on the cha
 :::
 
 :::note Malicious node management
-The nodes involved in validating a "validated transaction" that is ultimately determined to be invalid will be banned from the network if the cause of the anomaly linked to its invalidity is determined to be "Malicious."
+If a node is responsible for validation of a transaction is determined as invalid caused by an anamoly, it will be acertained as `malicious`.
+Malicious nodes are eventually banned from the network.
+
 :::
 
 
