@@ -3,7 +3,7 @@ id: scheduler
 title: OracleChain Scheduler
 ---
 
-The OracleChain module contains a process in charge of scheduling the data fetching and transaction submitting.
+The OracleChain module contains  processes for scheduling the data fetching and transaction submitting.
 
 It's modeled as finite state machine.
 
@@ -24,9 +24,9 @@ For example,
 
 For each actionable state, the process determines if the current running node is in charge to fetch or emit the transaction, based on the election algorithm.
 
-Also to avoid any useless transactions, the process identifies if a new transaction must be emitted regarding the freshness of the information retrieved from the Oracle services.
+To avoid any useless transactions, the process identifies if a new transaction must be emitted regarding the freshness of the information retrieved from the Oracle services.
 
-You can find below a schema representing this finite state machine and its related events.
+  The schema below represents this finite state machine and its related events.
 
 :::note OracleChain Scheduler FSM
 

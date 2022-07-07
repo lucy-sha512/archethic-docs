@@ -3,7 +3,7 @@ id: account
 title: Account
 ---
 
-Archethic node provides a high level and fast access to an account assets using primarily memory tables with ETS.
+Arch Ethic node provides a high level and fast access to an account assets using primarily memory tables with ETS.
 
 This gives us faster computation and data retrieval to asserts balances and UTXO loading.
 

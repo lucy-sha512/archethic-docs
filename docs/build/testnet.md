@@ -5,7 +5,7 @@ title: Testnet
 
 ## Local
 
-To test and build on top of Archethic network, we encourage people to test with a local instance.
+To test and build on top of Arch ethic network, we encourage people to test with a local instance.
 
 ### Installation
 
@@ -37,7 +37,7 @@ iex -S mix
 
 ### Get some funds
 
-To be able to fund some addresses, the development mode of the running enable the testnet faucet.
+The testnet faucet is enabled in development mode so that some addresses can be funded.
 
 1. Funding
 
@@ -57,4 +57,4 @@ Public testnet is available at [https://testnet.archethic.net](https://testnet.a
 
 ### Get some funds
 
-You can then go the [faucet](https://testnet.archethic.net/faucet) to get free UCOs to experiment the Archethic network
+You can then go the [faucet](https://testnet.archethic.net/faucet) to get free UCOs to experiment the Arch ethic network

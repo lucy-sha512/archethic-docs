@@ -3,19 +3,19 @@ id: js
 title: Javascript SDK
 ---
 
-Archethic Blockchain Official Javascript SDK is available on [Github](https://github.com/archethic-foundation/libjs)
+Arch Ethic Blockchain Official Javascript SDK is available on [Github](https://github.com/archethic-foundation/libjs)
 
 ---
 
-This SDK will help you to generate transaction on top of Archethic Blockchain.
+This SDK helps to generate transaction on top of Arch Ethic Blockchain.
 
 :::info
-The [AEWeb](https://github.com/archethic-foundation/aeweb-cli) product is using this SDK to build transaction to deploy web hosting assets in the Archethic Blockchain. Please have a look
+The [AEWeb](https://github.com/archethic-foundation/aeweb-cli) product uses this SDK to build transaction to deploy web hosting assets in the Arch Ethic Blockchain. Please have a look
 :::
 
 ## Installation
 
-The first thing to do is to install and import the package from the npm registry:
+Initially we have to install and import the package from the npm registry:
 ```bash
 npm install archethic
 ````
@@ -26,7 +26,7 @@ const archethic = require('archethic')
 
 ## Transaction building
 
-Then you can create a transaction by using the transaction builder
+Then we can create a transaction by using the transaction builder
 
 ```js
 const archethic = require('archethic')
@@ -37,11 +37,11 @@ const tx = archethic.newTransactionBuilder("transfer")
 ```
 
 :::warning
-You will need to have funds allocated to the previous address of the transaction as it's using UTXO model.
+We need to have funds allocated to the previous address of the transaction as it's using UTXO model.
 :::
 
 :::info
-You will also notice an `originPrivateKey` which is required to assert the transaction was built from an authenticated device. (See [Proof Of Work](/learn/arch-consensus/proof-of-work) for more details)
+  Notice the `originPrivateKey`  required to assert the transaction is built from an authenticated device. (See [Proof Of Work](/learn/arch-consensus/proof-of-work) for more details)
 :::
 
 ## Transaction sending
@@ -53,4 +53,4 @@ tx = ....
 archethic.sendTransaction(tx, endpoint)
 ```
 
-This will return you a `Promise`, so you can then assert for success or failure.
+This will return  a `Promise`, to assert  success or failure.

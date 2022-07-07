@@ -12,7 +12,7 @@ Along with validation workflow and processes, this context defines high levels f
 
 ## Standalone validation workflow
 
-When there is not only a single validation nodes (during the network initialization), a process is spawn to manage the transaction validation as a Task to run it (fire-off)
+When there not a single validation nodes (during the network initialization), a process is spawn to manage the transaction validation as a Task to run it (fire-off)
 
 ```mermaid
 stateDiagram-v2

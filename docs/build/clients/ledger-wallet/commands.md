@@ -15,14 +15,14 @@ APDU Command [bytes]:
 APDU Response = Encoded Origin Public Key i.e., encode(o_{pub}) 
  
  
-### Get Archethic Account Address 
+### Get Arch Ethic Account Address 
  
 APDU Command [bytes] = 
 
 |CLA = E0|INS = 04 |P1 = hash_type (for addr) [1 byte]|P2 = address_index (for bip44) [4 bytes]|Lc = len(ewk_{aes}+ew_{aes}) [1 byte] |ewk_{aes} [bytes] |ew_{aes} [bytes]  
 |-|-|-|-|-|-|-| 
  
-APDU Response = Encoded Archethic Account Address i.e., arch_address 
+APDU Response = Encoded Arch Ethic Account Address i.e., arch_address 
  
 ### Get Signature 
  

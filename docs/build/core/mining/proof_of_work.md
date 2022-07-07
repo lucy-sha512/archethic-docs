@@ -3,7 +3,7 @@ id: proof-of-work
 title: Proof of Work algorithm
 ---
 
-The Archethic's proof of work algorithm defines way to assert the validity of the origin signature.
+The Arch Ethic's proof of work algorithm defines a way to assert the validity of the origin signature.
 
 It defines two main components:
 
@@ -16,7 +16,7 @@ Origin public keys listed for a given transaction are known by the entire networ
 
 However, a given transaction can specify - through [smart-contract](/build/smart-contracts/) the origin family.
 
-By this way, the nodes are able to extract the list of origin public keys to assert with the signature.
+In this way, the nodes are able to extract the list of origin public keys to assert with the signature.
 
 ## Lookup
 

@@ -1,9 +1,9 @@
 ---
 id: database
-title: Archethic's database
+title: Arch Ethic's database
 ---
 
-Archethic is shipped with a custom database engine built from scratch to support an efficient data storage to support
+Arch Ethic is shipped with a custom database engine built from scratch to support an efficient data storage to support
 concurrent writes and reads while avoiding much as I/O as possible.
 
 ## Rationale

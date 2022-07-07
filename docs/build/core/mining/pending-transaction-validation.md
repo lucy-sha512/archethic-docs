@@ -3,7 +3,7 @@ id: transaction-validation
 title: Pending transaction validation
 ---
 
-When a transaction is under validation a process is started to perform the ARCH consensus workflow.
+When a transaction is under validation, a process is initiated to perform the ARCH consensus workflow.
 
 At the beginning of this workflow, a prior validation is done to detect if the transaction is errornous according of several implementations based on the type of the transactions and other criterias.
 
@@ -14,16 +14,16 @@ At the beginning of this workflow, a prior validation is done to detect if the t
 
 ## Smart contract verification
 
-If a transaction contains smart contract, it needs to verify certains things to be sure the smart contract is valid and the nodes will be able to interpret the contract, for example:
+If a transaction contains smart contract, it needs to verify certain criterias to be sure the smart contract is valid and the nodes will be able to interpret the contract, for example:
 
 - Parse the contract and determines its validity
-- If an ownership and its secret have been encoded for the node shared storage nonce public key, so they will be able create new transaction on the chain
+- If an ownership and its secret have been encoded for the node shared storage nonce public key,  they will be able create new transaction on the chain
 
 ## Transaction type verification
 
 ### Node transaction verification
 
-Before to join the network, node must submit a transaction with a type "node".
+Before joinning the network, node must submit a transaction with a type "node".
 The following checks are performed:
 - Decoding of the transaction's content
 - Assert the origin key is authorized along with the certification. (See [Hardware Root of Trust](/learn/cryptography/hardware-root-of-trust))
@@ -44,7 +44,7 @@ The nodes asserts the content of the Token transactions respects the formatting 
 
 ### Oracle transaction verification
 
-When the OracleChain polled some external data and build a transaction to propose the new changes, the nodes will assert the content from the services data are correct regarding the service SLA. (See [OracleChain Service](/build/core/oracle-chain/service))
+When the OracleChain polles some external data and build a transaction to propose the new changes, the nodes will assert the content from the services data are correct regarding the service SLA. (See [OracleChain Service](/build/core/oracle-chain/service))
 
 ### OracleSummary transaction verification
 

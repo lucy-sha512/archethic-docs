@@ -3,7 +3,7 @@ id: messaging
 title: Messaging
 ---
 
-Archethic Blockchain is used a brand new P2P layer from the [Supervised Multicast](/learn/p2p#archethics-way), but to ensure the best data transmission possible, we are using two modern approaches: `Stream Multiplexer` and `Binary Protocol`. 
+Arch Ethic Blockchain is uses a brand new P2P layer from the [Supervised Multicast](/learn/p2p#archethics-way). To ensure the best data transmission possible, we are using two modern approaches: `Stream Multiplexer` and `Binary Protocol`. 
 
 Those two features helps to achieve a low latency P2P messaging.
 
@@ -34,11 +34,11 @@ Even if the calls are serialized, it leverages a non-blocking messaging, so mult
 
 ## Binary Protocol
 
-Network latency is very important to reach an unlimited and really scalable network and using binary protocol helps to reduce bandwidth.
+Network latency is very important to achieve an unlimited and really scalable network. The binary protocol helps to reduce bandwidth.
 
 Different kind of solutions existing for binary protocol: Protobuf, Avro, Thrift, MsgPack, etc.
 
-However, to support a custom and efficient binary serialization, Archethic uses it own binary protocol through the transport layer to reduce and to optimize by the message, the data to send.
+However, to support a custom and efficient binary serialization, Arch Ethic uses it own binary protocol through the transport layer to reduce and to optimize by the message, the data to send.
 
 This aspect is important, when we are dealing with bits, to reduce byte size.
 

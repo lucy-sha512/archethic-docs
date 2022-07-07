@@ -5,7 +5,7 @@ title: Node
 
 ## Data structure
 
-Archethic is using a structured and open P2P network based on some properties:
+Arch Ethic is a structured and open P2P network with the following properties:
 
 A node include a list P2P information such as:
 - IP

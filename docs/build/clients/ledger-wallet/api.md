@@ -5,7 +5,7 @@ title: Ledger Application API
 
 :::success
 Reference Repository:
-[Archethic BOLOS App](https://github.com/archethic-foundation/archethic-ledger/tree/master/src)
+[Arch Ethic BOLOS App](https://github.com/archethic-foundation/archethic-ledger/tree/master/src)
 :::
 
 
@@ -48,8 +48,8 @@ It returns the public key derived from the hardware ledger device seed (**HARDWA
     - **\*flags |= IO_ASYNCH_REPLY;** 
         This is added to get response from the user of HID. So needed to be set to the ASYNC.
     - **getOriginPublicKey(cx_ecfp_public_key_t \*publicKey)**
-    This calls <strong>deriveArchethicKeyPair</strong> and return it.
-    ``` deriveArchethicKeyPair(CX_CURVE_SECP256K1, 650, 0xffff, 0, NULL, 0, NULL, publicKey); ```
+    This calls <strong>deriveArch EthicKeyPair</strong> and return it.
+    ``` deriveArch EthicKeyPair(CX_CURVE_SECP256K1, 650, 0xffff, 0, NULL, 0, NULL, publicKey); ```
 
 :::note
     - First Param** is the curve type which is fixed in our case.
@@ -64,7 +64,7 @@ It returns the public key derived from the hardware ledger device seed (**HARDWA
 :::
     
 - Function Signature
-    **deriveArchethicKeyPair(cx_curve_t curve, uint32_t coin_type, uint32_t account, uint32_t address_index, uint8_t \*masterSeed, uint8_t masterSeedLen, cx_ecfp_private_key_t \*privateKey, cx_ecfp_public_key_t \*publicKey)**
+    **deriveArch EthicKeyPair(cx_curve_t curve, uint32_t coin_type, uint32_t account, uint32_t address_index, uint8_t \*masterSeed, uint8_t masterSeedLen, cx_ecfp_private_key_t \*privateKey, cx_ecfp_public_key_t \*publicKey)**
     - This function first checks the curve type of the `cx_curve_t`, which sets the mode for the which it needs to perform operation.
     - Next depending upon the account type as defined in the specification (0xffff | 0x0000) it derives the private key from the masterseed.
         - When the account type is `0xffff` then **os_perso_derive_node_with_seed()** function is called which derives the key from the ledger hardware origin key.
@@ -98,7 +98,7 @@ Since raw private key is in **bytes** it needs to be converted which is done by 
 [Source File: getAddress.c](https://github.com/archethic-foundation/archethic-ledger/blob/master/src/getAddress.c)
 
 :::info
-Return the Archethic address from the ledger including curve type in the start
+Return the Arch Ethic address from the ledger including curve type in the start
 :::
 
 
@@ -112,7 +112,7 @@ ewk<sub>aes</sub> = encrypted wallet key
     + First 4 bytes are address index hence we store then in `address_index` from the data buffer (Converting them according to thier byte ordering.)
     + We performECDH to get the secret pointX on the curve,
         + Fn Signature **performECDH(uint8_t \*ephPublicKey, uint8_t ephPublicKeySize, uint8_t \*ecdhPointX)**
-        + This derives an Archethic keypair first with function `deriveArchethicKeyPair` and gets originPrivateKey
+        + This derives an Arch Ethic keypair first with function `deriveArch EthicKeyPair` and gets originPrivateKey
         + The performs ecdh with function `cx_ecdh` with the originPrivateKey and takes publickey and finds the ecdhPointX 
         + `cx_ecdh(&originPrivateKey, CX_ECDH_X, ephPublicKey, ephPublicKeySize, ecdhPointX, 32);`
         + publicKey is taken from the `dataBuffer`
@@ -134,13 +134,13 @@ ewk<sub>aes</sub> = encrypted wallet key
             + Fn Signature **getBIP44Path(address_index, g_wallet.encodedWallet, g_wallet.walletLen, 0, g_bip44_path, &bip44pathlen);**
             + This does according to address index which were first 4 bytes of `dataBuffer`
             + This returns the bip44Path in `char* string_bip_44`
-        + Now Generate Archethic Address from the Encoded Wallet and set as required. 
-            + Fn Signature **generateArchethicAddress(uint8_t hash_type, uint32_t address_index, uint8_t \*encoded_wallet, uint8_t \*wallet_len, uint32_t sequence_no, uint8_t \*address, uint8_t \*address_len)**
+        + Now Generate Arch Ethic Address from the Encoded Wallet and set as required. 
+            + Fn Signature **generateArch EthicAddress(uint8_t hash_type, uint32_t address_index, uint8_t \*encoded_wallet, uint8_t \*wallet_len, uint32_t sequence_no, uint8_t \*address, uint8_t \*address_len)**
             + For now only support hash_type `sha256`
             + Returns address in `uint8_t *address`
                 + It generates key from the encoded wallet and storesit in `cx_ecfp_public_key_t` structure
                 + Fn Signature **generateKeyFromWallet(address_index, encoded_wallet, wallet_len, sequence_no, &curve_type, NULL, &publicKey)** 
-                    + Derives Archethic Keypair depending on the supplied params:
+                    + Derives Arch Ethic Keypair depending on the supplied params:
                         + **coin_type**
                         + **account**
                         + **curve**
@@ -173,7 +173,7 @@ address_index = 4 bytes (bip44)
     + performECDH to get ecdhPointX 
        + We performECDH to get the secret pointX on the curve,
             + Fn Signature **performECDH(uint8_t \*ephPublicKey, uint8_t ephPublicKeySize, uint8_t \*ecdhPointX)**
-            + This derives an Archethic keypair first with function `deriveArchethicKeyPair` and gets originPrivateKey
+            + This derives an Arch Ethic keypair first with function `deriveArch EthicKeyPair` and gets originPrivateKey
             + The performs ecdh with function `cx_ecdh` with the originPrivateKey and takes publickey and finds the ecdhPointX 
             + `cx_ecdh(&originPrivateKey, CX_ECDH_X, ephPublicKey, ephPublicKeySize, ecdhPointX, 32);`
     + Now we decrypt the wallet with the ecdhPointX 
@@ -190,8 +190,8 @@ address_index = 4 bytes (bip44)
                 + If if doesn't return `0xBADDECODE`
                 + If it does
                     + Decrypt the wallet and return the **encoded wallet**
-    + Now Generate Archethic Address from the Encoded Wallet and set as required. 
-        + Fn Signature **generateArchethicAddress(uint8_t hash_type, uint32_t address_index, uint8_t \*encoded_wallet, uint8_t \*wallet_len, uint32_t sequence_no, uint8_t \*address, uint8_t \*address_len)**
+    + Now Generate Arch Ethic Address from the Encoded Wallet and set as required. 
+        + Fn Signature **generateArch EthicAddress(uint8_t hash_type, uint32_t address_index, uint8_t \*encoded_wallet, uint8_t \*wallet_len, uint32_t sequence_no, uint8_t \*address, uint8_t \*address_len)**
         + For now only support hash_type `sha256`
         + Returns address in `uint8_t *address`
     + Now get the BIP44Paths from the encoded wallet according to specificaton

@@ -3,7 +3,7 @@ id: beacon-chain
 title: BeaconChain
 ---
 
-BeaconChain helps the Archethic sharding network to be supervised and provided global view of the system.
+BeaconChain helps the Arch Ethic's sharding network to be supervised and provided global view of the system.
 
 To be able to manage it, few modules and functions are needed to make this possible.
 
