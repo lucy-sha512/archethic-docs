@@ -3,7 +3,7 @@ id: cryptography
 title: Cryptography
 ---
 
-Arch Ethic network through the usage of TransactionChains  leverages an adaptative and quantum-safe cryptography.
+Archethic network through the usage of TransactionChains  leverages an adaptative and quantum-safe cryptography.
 
 ## Quantum-Safe
 
@@ -11,7 +11,7 @@ The non-disclosure characteristic of public keys combined with the necessity to 
 
 ### Non-Discolure of public keys
 
-Arch Ethic [TransactionChains](/learn/transaction-chain) uses a non-disclosure mechanism of public keys using chains of cryptography. 
+Archethic [TransactionChains](/learn/transaction-chain) uses a non-disclosure mechanism of public keys using chains of cryptography. 
 Each transaction contains an address, which is a hash of the next public key and the previous public key.
 Therefore, we don't have way to know which public key is used for a given transaction until a next one is coming.
 
@@ -24,7 +24,7 @@ Therefore, in order to generate a transaction by breaking private keys by a Quan
 
 ## Adaptative
 
-To support backward compatibility and to evolve the network as the cryptographic research progesses , the choice cryptographic algorithms is given to people, organizations or countries making Arch Ethic a versioned cryptography or metadata cryptography.
+To support backward compatibility and to evolve the network as the cryptographic research progesses , the choice cryptographic algorithms is given to people, organizations or countries making Archethic a versioned cryptography or metadata cryptography.
 
 
 ### Public keys
@@ -42,7 +42,7 @@ This information helps to determine the length of a hash and to perform some che
 
 ### Transaction addresses
 
-While transaction addresses are often represented as hashes, Arch Ethic provide a new level of information inside the transaction's address. A byte is prepending the hash with an information regarding the elliptic curve used to generate the public key related.
+While transaction addresses are often represented as hashes, Archethic provide a new level of information inside the transaction's address. A byte is prepending the hash with an information regarding the elliptic curve used to generate the public key related.
 
 This is done, in order to be really adaptative. To support the non-disclosure mechanism offered by the transaction chain, we need to know which elliptic was used for a previous transaction to be able to reproduce the previous public key.
 

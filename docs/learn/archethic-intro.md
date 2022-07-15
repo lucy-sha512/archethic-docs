@@ -1,5 +1,5 @@
 ---
-id: archethic-intro
+id: Archethic-intro
 title: Archethic introduction
 ---
 Archethic is the next generation of Blockchain which provides a truly decentralized limitless network, using TransactionChain and a new consensus named ARCH (Atomic Rotating Commitment Heuristic),

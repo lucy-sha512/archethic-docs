@@ -6,7 +6,7 @@ title: OracleChain
 
 To enable a decentralized network to survive for the long term it must have the capability to adapt to threats and react accordingly. 
 The network must require all the qualitative information to reconstruct any corrupt data.
-In Arch Ethic Blockchain Oracle chains and Beacon chains support this feature.
+In Archethic Blockchain Oracle chains and Beacon chains support this feature.
 
 While the Beacon chain lists all network states every 10mins and summarizes it every day Oracle supports Off-Chain communication through a dedicated transaction chain called `OracleChain`.
 
@@ -18,9 +18,9 @@ OracleChain behaves  like the [BeaconChain](/learn/sharding/beacon-chain) except
 
 It's using a long-polling mechanism to get data from external sources and submit a transaction through ARCH Consensus.
 
- ARCH consensus ensures  atomic commitment of the data submitted as well as the validity of the information written into the transaction.
+ARCH consensus ensures  atomic commitment of the data submitted as well as the validity of the information written into the transaction.
 
-Each node received the new transaction from the OracleChain and can apply behaviors from this new data and notify smart contracts which depend on oracle updates.
+Each node receives the new transaction from the OracleChain and can apply behaviors from this new data and notify smart contracts which depend on oracle updates.
 
 
 ```mermaid

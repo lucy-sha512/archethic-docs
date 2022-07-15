@@ -3,7 +3,7 @@ id: bootstrap
 title: Bootstrap
 ---
 
-With the Arch Ethic node, a task is launched to  perform the node bootstrapping to join the network.
+With the Archethic node, a task is launched to  perform the node bootstrapping to join the network.
 
 Bootstraping a node, requires connectivity information (IP, Port, Transport, Reward address, Bootstrapping seeds) and also last synchronization date.
 

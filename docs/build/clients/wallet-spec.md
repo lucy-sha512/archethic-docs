@@ -1,18 +1,18 @@
 --- 
 id: wallet-spec
-title: Arch Ethic's wallet specification
+title: Archethic's wallet specification
 --- 
 
-Onchain wallet (aka **Keychain**) is a wallet stored on Arch Ethic blockchain in encrypted form. 
+Onchain wallet (aka **Keychain**) is a wallet stored on Archethic blockchain in encrypted form. 
 
 This keychain aims to support several way to identify a user and its transaction chains.
 It can also support multichains identification through the use of key derivation and derivation path.
 
-A keychain is then a wallet which stores a main master seed, with a list of services (Arch Ethic chains / other crypto identification) encrypted and only accessible by a list of authorized public keys
+A keychain is then a wallet which stores a main master seed, with a list of services (Archethic chains / other crypto identification) encrypted and only accessible by a list of authorized public keys
 
 ## Glossary
 
-- `w_{e}` = Encoded Onchain Arch Ethic Wallet
+- `w_{e}` = Encoded Onchain Archethic Wallet
 - `wk_{aes}` = AES256 CTR Key used to encrypt w_{e}
 - `enc(w_{e})` = AES256 CTR Encryption of `w_{e}` using `wk_{aes}`
 - `ew_{aes}` = Encoded `enc(w_{e})`
@@ -34,13 +34,12 @@ A keychain is then a wallet which stores a main master seed, with a list of serv
 
 ### Derivation path
 
-Arch Ethic's keychain is using hierarchical derivation key scheme inspired by BIP32 to define a way
+Archethic's keychain is using hierarchical derivation key scheme inspired by BIP32 to define a way
 to generate keys and addresses.
 
-Because Arch Ethic cryptography and transaction chain paradigm differs from traditional blockchain (used in BIP32/BIP44)
-we adapted it to use specific derivation scheme (as describe in the BIP43)
+Because Archethic cryptography and transaction chain paradigm differs from traditional blockchain (used in BIP32/BIP44) we adapted it to use specific derivation scheme (as describe in the BIP43)
 
-The main derivation path of Arch Ethic keychain is: **m/650'/account/index** (where 650 is the Arch Ethic transaction chain purpose - in the BIP43 terminology)
+The main derivation path of Archethic keychain is: **m/650'/account/index** (where 650 is the Archethic transaction chain purpose - in the BIP43 terminology)
 
 The `account` can be anything, by default `0` is the main uco transaction chain, but it could be customized to create more entropy.
 
@@ -64,7 +63,7 @@ hashedPath = SHA256(ReplaceDerivationPath(derivationPath, index))
 
 #### Derive private key
 
-Then we have to derive the private key based on the hashedPath and the master seed by using HMAC and extracting the first 32 bytes of the result
+Then we have to derive the private key based on the hashedPath and the master seed by using HMAC and extracting the first 32 bytes of the result.
 
 ```
 extendedSeed = HMAC-SHA512(Key=MasterSeed, Data=hashedPath)
@@ -73,7 +72,7 @@ extendedPrivateKey = extendedSeed.slice(0, 32)
 
 #### Derive public key
 
-Now with the given private key we can easily extract the public key for the given curve specified in the Keychain's service
+Now with the given private key we can easily extract the public key for the given curve specified in the Keychain's service.
 
 ```
 { publicKey, private } = generateKeyPair(extendedPrivateKey, curve)
@@ -101,7 +100,7 @@ enc(w_{e}) = aes256(mode=ctr, key = wk_{aes}, iv = wallet_iv, data = w_{e})
 ```
 
 #### Encoding of Encrypted Wallet 
-The above encrypted wallet `enc(w_{e})` is stored on the Arch Ethic Blockchain with the following format. 
+The above encrypted wallet `enc(w_{e})` is stored on the Archethic Blockchain with the following format. 
  
 |enc(w_{e})  [bytes]| 
 |-| 
@@ -126,7 +125,7 @@ auth_tag [16 bytes], reserved [16 bytes] = hmac256(key = auth_key, data = enc(wk
 ```
  
 #### Encoding of Encrypted Wallet Key 
-The above encrypted key `enc(wk_{aes})` is stored on the Arch Ethic Blockchain with the following format. 
+The above encrypted key `enc(wk_{aes})` is stored on the Archethic Blockchain with the following format. 
  
 |e_{pub} 04xy [bytes]|auth_tag [16 bytes]|enc(wk_{aes}) [32 bytes]| 
 |-|-|-| 
@@ -190,7 +189,7 @@ The `origin_type` is a 1 byte long field, hex encoded. Currently, following orig
  
 ### Account Address Format 
 
-Arch Ethic addresses following a specific format to version algorithms used helping
+Archethic addresses following a specific format to version algorithms used helping
 to evolve easily between curves and hash algorithms.
 
 |Curve Type | Hash algo | hash(encode(pub_key))|

@@ -3,7 +3,7 @@ id: oracle-chain
 title: OracleChain
 ---
 
-OracleChain is an internal mechanism inside Arch Ethic Node Software that fetches external data to embedd in a transaction.
+OracleChain is an internal mechanism inside Archethic Node Software that fetches external data to embedd in a transaction.
 
 It's built around three main components:
 - List of [services](/build/core/oracle-chain/service) or provider

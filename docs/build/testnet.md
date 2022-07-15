@@ -57,4 +57,4 @@ Public testnet is available at [https://testnet.archethic.net](https://testnet.a
 
 ### Get some funds
 
-You can then go the [faucet](https://testnet.archethic.net/faucet) to get free UCOs to experiment the Arch ethic network
+You can then visit the [faucet](https://testnet.archethic.net/faucet) to get free UCOs to experiment the Arch ethic network

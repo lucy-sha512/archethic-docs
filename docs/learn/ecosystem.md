@@ -34,18 +34,16 @@ Our blockchain platform aims to replace and improve all current applications wit
 - `AEWweb`: One app for website maintenance, security, handling, and costing on the blockchain at a fraction of the current hosting costs!
 - `AEMail`: Email Redefined! An all-in-one email, messaging, wallet, and payments app that provides the full suite for a user. Coming soon
 - `AENFT`: Archethic embeds in its transaction structure NFTs and are therefore native to the network. However, a decentralized marketplace reimagined in collaboration with artists will come soon!
-- And so more...
+- And more...
 
 ## Decentralized Identity
 
 Your identity is your right. The security and threat issues that centralized systems pose helped us realize that self-sovereign identity is needed now more than ever.
  
 
+Have you ever wondered how many times your identity is exploited without your knowledge by centralized monopolies or even your favorite merchant site? The world wants you to believe that ownership doesn’t matter. We are here to change that narrative.
+
 With Archethic, you can access your identity but no one owns it. 
-Have you ever wondered how many times your identity is exploited without your knowledge by centralized monopolies or even your favorite merchant site? 
-
-The world wants you to believe that ownership doesn’t matter. We are here to change that narrative. 
-
 Identity is not just about ownership but control and freedom. 
 
 Archethic provides interoperable [decentralized identity management](/learn/decentralized-id) using both the traditional key management as well as our crypto-biometrics key management solution. 
@@ -74,4 +72,4 @@ We are an open-source and decentralized protocol in which decision involves comm
 
 In that sense, we have created **Archethic Improvement Proposals (AEIPs)** to offer the opportunity to contribute to the project by proposing technical, informational, and process-based enhancements. 
 
-If you are interested, please take on the [AEIP repository](https://github.com/archethic-foundation/aeip)
+If you are interested, please take on the [AEIP repository](https://github.com/Archethic-foundation/aeip)

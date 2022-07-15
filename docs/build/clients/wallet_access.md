@@ -1,9 +1,9 @@
 ---
 id: wallet-access
-title: Arch Ethic's wallet access
+title: Archethic's wallet access
 ---
 
-Onchain wallet (aka **Keychain**) is a wallet stored on Arch Ethic blockchain in encrypted form, to allow only the authorized access to read it and build transaction from it.
+Onchain wallet (aka **Keychain**) is a wallet stored on Archethic blockchain in encrypted form, to allow only the authorized access to read it and build transaction from it.
 
 Also to avoid disclosure of information, access and keychain are using end to end encryption with elliptic curve cryptography to secure it.
 
@@ -22,7 +22,5 @@ In order to retrieve the keychain from a device or application perspective, the 
 
 Then the device or application will decrypt the encrypted keychain address to be able to download the keychain transaction.
 
-Once received, the device or application - as being authorized by the keychain - will be able to decrypt the AES key to decrypt the wallet and perform any key derivation and transaction building from it.
-
-Then, because the key have been generated on the fly, the client will forget about the private keys and seeds decrypted.
+Once received, the device or application - as being authorized by the keychain - will be able to decrypt the AES key to decrypt the wallet and perform any key derivation and transaction building from it. Because the key have been generated on the fly, the client will forget about the private keys and seeds decrypted.
 

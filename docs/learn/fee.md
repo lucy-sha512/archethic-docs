@@ -3,7 +3,7 @@ id: fee
 title: Transaction fee
 ---
 
-Arch Ethic Blockchain uses specific heuristic algorithms to ensure the best way to distribute transactions.
+Archethic Blockchain uses specific heuristic algorithms to ensure the best way to distribute transactions.
 
 The fees are calculated according to the real costs of the network (size, complexity) and is based on a minimal fee ($0.01) indexed to the real UCO's price (using [Oracle Chain](/learn/oracle-chain))
 
@@ -49,10 +49,7 @@ Transactions to manage keychain for creation, updates or add new access don't co
 
 ### Token 
 
-Arch Ethic supports a token mining through a given type of transaction `token`.
-Because during this step validation nodes have to perform some additional work to create new unspent transaction outputs (UTXOs) and deliver them (if multiple - for example in a collection creation).
-
-Hence an additional fee is computed based on the number of UTXO to create.
+Archethic supports a token mining through a given type of transaction `token`. Because during this step validation nodes have to perform some additional work to create new unspent transaction outputs (UTXOs) and deliver them (if multiple - for example in a collection creation). Hence an additional fee is computed based on the number of UTXO to create.
 
 - Fungible tokens: there will only cost the minimum fee: $0.01 - as it's like doing some UCO transfer
 

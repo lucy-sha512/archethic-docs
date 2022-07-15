@@ -3,7 +3,7 @@ id: election
 title: Election
 ---
 
-Arch Ethic provides rotating algorithm to elect validation and storage nodes. 
+Archethic provides rotating algorithm to elect validation and storage nodes. 
 
 Validation and Storage Election algorithm provides also list of heuristic constraints to fine grain elections. 
 

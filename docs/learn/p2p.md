@@ -6,14 +6,7 @@ title: P2P
 Archethic is a permissionless network where any node can participate into the network as long as they have some hardware requirements such secure element to enclave the private keys
 avoiding any disclosure of keys. (See [Hardware Root of Trust](/learn/cryptography/hardware-root-of-trust))
 
-However, the network is able to detect if the new joined nodes should act as validation nodes by authorizing them to validate transactions.
-
-Archethic is a permissionless network where any node can participate in the network as long as they have some hardware requirements such secure element to enclave the private keys
-avoiding any disclosure of keys. (See [Hardware Root of Trust](/learn/cryptography/hardware-root-of-trust))
-
-However, the network can detect if the newly joined nodes should act as validation nodes by authorizing them to validate transactions.
-
-So to achieve an unlimited permissionless network, the entire P2P layer has been redesigned from the ground to be more effective to support higher TPS and adaption.
+However, the network is able to detect if the new joined nodes should act as validation nodes by authorizing them to validate transactions. So to achieve an unlimited permissionless network, the entire P2P layer has been redesigned from the ground to be more effective to support higher TPS and adaption.
 
 
 ## Existing solutions
@@ -49,17 +42,16 @@ It uses some kind of Multi Unicast communication protocol, where a node communic
 
 During transaction validation through mining and replication, nodes communicate and can gather information from incoming or outgoing connections.
 
-When a node receives a message or sends a message, it can capitalize on this information to determine if the node is available or not, in a local view.
-Then through this view, if the node is not considered available it can pick another node to fetch information, while data pushing will remain to check/recheck the availability over time.
+When a node receives a message or sends a message, it can capitalize on this information to determine if the node is available or not, in a local view. Then through this view, if the node is not considered available it can pick another node to fetch information, while data pushing will remain to check/recheck the availability over time.
 
 ### Network transaction chains
 
 Network transaction chains are a way to announce information to the network through consensus and replicated throw all the nodes.
 
-Other networks may leverages gossip for P2P information, Archethic uses transaction-based node information for P2P connectivity and cryptography.
-So when a node joins/rejoins the network or when its IP/Port/Key changes, a new transaction is disseminated to all the nodes in the network after its validation.
+Other networks may leverages gossip for P2P information, Archethic uses transaction-based node information for P2P connectivity and cryptography. So when a node joins/rejoins the network or when its IP/Port/Key changes, a new transaction is disseminated to all the nodes in the network after its validation.
 
 Then each node knows the entire list of nodes allowed to participate in the network through the use of Node transaction chains.
+
 To provide a high level of security and privacy, each connection is encrypted and authenticated by the first node public key known from the transaction chains.
 
 ### Beacons Chains

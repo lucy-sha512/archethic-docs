@@ -3,7 +3,7 @@ id: core
 title: Core development
 ---
 
-Arch Ethic Node repository can be found [here](https://github.com/Arch Ethic-foundation/Arch Ethic-node)
+Archethic Node repository can be found [here](https://github.com/Archethic-foundation/Archethic-node)
 
 
 ## Technology Stack
@@ -43,7 +43,7 @@ Moreover, we want a database with a high throughput in writing, and ScyllaDB fit
 Code base is divided into domains (contexts) for better single responsibility principle:
 
 <!-- Source of the SVG on https://markmap.js.org/repl
-## Arch Ethic_web 
+## Archethic_web 
 
 ### Explorer UI
 
@@ -62,7 +62,7 @@ Code base is divided into domains (contexts) for better single responsibility pr
 
 #### GraphQL: Transaction queries
 
-## Arch Ethic
+## Archethic
 
 ### Crypto
 - Node keystore

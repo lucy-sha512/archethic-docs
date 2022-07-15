@@ -3,14 +3,14 @@ id: token
 title: Tokens
 ---
 
-An essential component of Arch Ethic is the `token`.
+An essential component of Archethic is the `token`.
 With new use cases and trends, our world is currently evolving toward digitalization and tokenization (royalties, collection, proof of ownership, etc.)
 
-Users of Arch Ethic have the native ability to create and transact with an unlimited-defined (custom) token.
+Users of Archethic have the native ability to create and transact with an unlimited-defined (custom) token.
 
 ## Native 
 
-Arch Ethic tokens are considered as native  for developers, there is no need to create a smart contract to mint or transfer tokens.
+Archethic tokens are considered as native  for developers, there is no need to create a smart contract to mint or transfer tokens.
 
 The transaction's structure support  its design  and extension of the ledger model (more than UCO-only transaction)
 
@@ -18,15 +18,15 @@ To make them effective and performant, all traces of complexity have been elimin
 
 ## Standardized
 
-Arch Ethic's tokens are also unified through a specification to help implementers, developers and users to have a clear understanding of their definition.
+Archethic's tokens are also unified through a specification to help implementers, developers and users to have a clear understanding of their definition.
 
-For more details please take a look at the [AEIP-2](https://github.com/Arch Ethic-foundation/aeip/blob/main/AEIP-2.md)
+For more details please take a look at the [AEIP-2](https://github.com/Archethic-foundation/aeip/blob/main/AEIP-2.md)
 
 ## Creation
 
 To create a token, you have to:
-1. set the transaction's type to "token"
-2. defined in the transaction's data the token definition
+1. Set the transaction's type to "token"
+2. Define token definition in transaction data.
 
 ### Fungible
 

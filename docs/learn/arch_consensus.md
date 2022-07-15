@@ -2,7 +2,7 @@
 id: arch-consensus
 title: ARCH consensus
 ---
-Atomic Rotating Commitment Heuristic, `ARCH` is the mechanism behind which Arch Ethic Blockchain achieves Consensus while validating a transaction.
+Atomic Rotating Commitment Heuristic, `ARCH` is the mechanism behind which Archethic Blockchain achieves Consensus while validating a transaction.
 *  Security: Each transaction is automatically validated, meaning that during validation, there is either acceptance or refusal.
 *  Data Consistency: Heuristic algorithms store transactions in a distributed manner while guaranteeing access to the most recent write and maximum availability.
 * Fault Tolerance: Node election for storage and validation is constantly changing, eliminating the possibility of network dominance by one or more parties.
@@ -11,13 +11,13 @@ Arch Consensus is conceptualized around Atomic Commitment, Heuristic algorithm, 
 
 ## Atomic Commitment
 
-The Arch Ethic Blockchain is built on `Hypergeometric distribution` principles, which, in the presence of an unpredictable election and formal consensus, enable one to achieve, with a 99.99999999 percent of certainty, the same result from 197 nodes as one would from 100,000 nodes.
+The Archethic Blockchain is built on `Hypergeometric distribution` principles, which, in the presence of an unpredictable election and formal consensus, enable one to achieve, with a 99.99999999 percent of certainty, the same result from 197 nodes as one would from 100,000 nodes.
 
 Since it can withstand attacks from 90% of malicious nodes, it enables consensus establishment with a small number of nodes.
 
 By strictly controlling disruptive nodes, which are expelled after an assessment of the source of the conflict, the danger of linked availability is ensured.
 
-By supporting more than 90% of malicious nodes into its network, `ARCH` consensus is above aeronautical or nuclear standard, thanks to the `Atomic Commitment` which requests the total agreement of the validation nodes and from a `Malicious Detection` algorithm to detect the malicious nodes.
+
 
 ## Heuristic Algorithm
 Heuristic Algorithms are made up of softwares (interpreters, libraries, etc.) and configuration files.
@@ -36,16 +36,13 @@ The following contents are used for computing Rotating keys.
 
 Rotating Keys = Hash(Node public key, Daily Nonce, Hash(Transaction))
 
-The purpose of the rotating keys calculation is to provide an unpredictable and repro-
-ducible ordered list of the allowed nodes. The scheduling thus obtained allows each
-of the nodes to find autonomously and share the list of nodes that will be in charge of
-the validation of the transaction.
+The purpose of the rotating keys calculation is to provide an unpredictable and reproducible ordered list of the allowed nodes. The scheduling thus obtained allows each of the nodes to find autonomously and share the list of nodes that will be in charge of the validation of the transaction.
 They produces a proof, named: `Proof of Election` which can be verified by any other nodes to ensure the right election of nodes.
 
 From this algorithm, we get a list of nodes which can be filtered according to the constraints of the validation of the transaction.
 - P2P availability
 - Geographical distribution
-- Availability of the nodes
+
 
 ## Workflow
 

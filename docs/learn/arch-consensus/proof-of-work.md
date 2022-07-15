@@ -4,15 +4,16 @@ title: Proof of Work
 ---
 
 
-"Proof of Work" ensures an unpredictable and pseudo-random selection of block validation in networks like Bitcoin (mining). But this method uses a lot of energy, and it can still be used against you by hashRate control.
+In networks like Bitcoin `Proof of Work` requires a lot of energy consumption, and can still be subject to exploitation by HashRate control.
 
-Based on the reliability of the transaction origination devices, Arch Ethic Blockchain employs a novel type of "Proof of Work." The device from which a transaction originated, known as the "Origin Signature," signs the transaction in the Arch Ethic Blockchain.
+
+Based on the reliability of the transaction origination devices, Archethic Blockchain employs a novel type of `Proof of Work`.The device from which a transaction originated, known as the `Origin Signature`, signs the transaction in the Archethic Blockchain.
 This allows for the additional security requirements for transaction validation, such as: 
 - preventing any transactions in the event of key theft.
 - permit the user to check their balance on any smartphone, but only allow transactions to be generated on vetted devices
 - enable the organizers of an election to ensure the biometric identity of a voter.
 
-The figure below describes a typical unvalidated transaction on Arch Ethic Blockchain. 
+The figure below describes a typical unvalidated transaction on Archethic Blockchain. 
 ```
 |-----------|------|------|---------------------|--------------------|------------------|
 |  Address  | Type | Data | Previous public key | Previous signature | Origin signature |
@@ -22,7 +23,7 @@ The figure below describes a typical unvalidated transaction on Arch Ethic Block
                                                                     signature from the device that orginated the transaction    
 ```
 
-Finding the right public key from a list of public keys that are known to the network and associated with the transaction's "Origin Signature" constitutes the "Proof Of Work." 
+Finding the right public key from a list of public keys that are known to the network and associated with the transaction's `Origin Signature` constitutes the `Proof Of Work`. 
 
 This requires conducting a search on a limited number of public keys to confirm that the device has the necessary permissions to create the transaction. The nodes can simultaneously determine which keys are authorised and are aware of their shared secrets.
 

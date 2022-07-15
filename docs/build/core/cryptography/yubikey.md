@@ -12,7 +12,7 @@ Reference Files:
 :::
 
 ## initializeYK() :
-Initializes the context of the yubikey application in the variable g_state and connects to the hardware device. If successful, then gets the key index of Arch Ethic as well as key index of the yubikey device.
+Initializes the context of the yubikey application in the variable g_state and connects to the hardware device. If successful, then gets the key index of Archethic as well as key index of the yubikey device.
 ## bool checkYK(): 
 displays the model of yubikey device used returns true if the device list contains "Yubico Yubikey".
 ## verifyPinYK(): 

@@ -11,13 +11,12 @@ Whether it’s Amazon’s login credentials or the private keys in a hardware wa
 
 For the latter, holding private keys in a single location may potentially expose them to phishing attempts aimed at gaining access to their private keys and, as a result, compromising their crypto identity.
 
-ArchEthic’s Decentralized Identity provides individual privacy and resiliency by enabling users to get passwordless access to their identities stored at multiple nodes in the blockchain. Consequently, rather of handing over control of one’s identity to a third party, it retains it in the control of the individual.
+Archethic’s Decentralized Identity provides individual privacy and resiliency by enabling users to get passwordless access to their identities stored at multiple nodes in the blockchain. Consequently, rather of handing over control of one’s identity to a third party, it retains it in the control of the individual.
 
 Archethic was designed mainly to resolve one big issue that we are facing right now in technology: to provide a secure and easy way to identify ourselves.
 
 Decentralized identity avoids the need of entrusting one's identity to a third party, who might find itself in a conflict of interest and exploit our identity without our knowledge.
 This person retains sole control of his/her identity, which is stored on a multitude of nodes ensuring its durability and integrity.
-
 
 Hence Archethic's decentralized identity is brought by the Archethic transaction chain which enables authorization, end-to-end encryption, and upgradability in the decentralized network.
 

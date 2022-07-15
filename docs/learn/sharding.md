@@ -10,19 +10,16 @@ Within distributed networks, sharding poses a number of challenges, such as:
 * Attacks on the data nodes 
 * Unlimited data network without overloading the global network.
 
-Arch Ethic blockchain employs `Sharding` with redesigned self discovery and data synchronization to ensure avalaibility irrespective of a disaster.
+Archethic blockchain employs `Sharding` with redesigned self discovery and data synchronization to ensure avalaibility irrespective of a disaster.
 Prioritizing data freshness is ensured by Heuristics to allow recovery from the best network path.
 
-
-
-
-#### Building Blocks of Sharding in Arch Ethic Blockchain
+#### Building Blocks of Sharding in Archethic Blockchain
  - ` Transaction Chains `
  With Transaction Chain paradigm, transactions can be divided into chain, to ensure a concurrent processing unlike traditional blockchains.
 - `Avalability`
 The storage layers ensures avalability even in case of disaster through `Replication`.
 -`Unlimited Network Storage`
-Arch Ethic blockchain controls overloading of the global network by definning rule for nymber of replicas per chain. 
+Archethic blockchain controls overloading of the global network by definning rule for nymber of replicas per chain. 
 This replication rule changes as new nodes are added to the network.
 The replication rule is refined as the number of transaction in the chain increases.
 * The number of replicas for a transaction chain initially will be the first instantiation of the rule.
@@ -36,23 +33,20 @@ Other new blockchain networks start to use `Sharding` but sometimes not in a com
 - either storage
 - either validation
 
-Arch Ethic Blockchain supports a complete sharding scheme for validation and for storage.
+Archethic Blockchain supports a complete sharding scheme for validation and for storage.
 
 
 ## Validation
-A fresh group of rotating nodes validates every transaction.
-This ensures the distribution of validation and the processing, to achieve a linear scalability and a high TPS.
-
- Transaction use the UTXO model so there is no reality out of the transaction preventing the issues in the network like:
-
+A fresh group of rotating nodes validates every transaction.This ensures the distribution of validation and the processing, to achieve a linear scalability and a high TPS.
+Transaction use the UTXO model so there is no reality out of the transaction preventing the issues in the network like:
 - cross-shard synchronisation 
 - communication via state channels
 
 Only the transaction and the transaction inputs will be taken into account when determining the status of a transaction.
 
 ## Storage
-Upon transaction validation, validation nodes are responsible for sending the transaction to several pools of nodes:
 The storage nodes connected to the new transaction's address  replicates all transactions belonging to the same chain.
+Upon transaction validation, validation nodes are responsible for sending the transaction to several pools of nodes:
 - I/O Storage Pool: Every valid transaction is duplicated on the storage nodes connected to the input/output addresses of the transaction:
 - Storage pools are addressed by transaction movements.
 - Public key storage pools node motions

@@ -1,14 +1,14 @@
 ---
 id: database
-title: Arch Ethic's database
+title: Archethic's database
 ---
 
-Arch Ethic is shipped with a custom database engine built from scratch to support an efficient data storage to support
+Archethic is shipped with a custom database engine built from scratch to support an efficient data storage to support
 concurrent writes and reads while avoiding much as I/O as possible.
 
 ## Rationale
 
-Several solutions have been analyzed and uses from benchmarks, to implementation until the need to implement a solution which will fit the needs and requirements. (ie. LevelDB, RocksDB, Cassandra, ScyllaDB, Aerospike, Redis, etc.)
+Several solutions have been analyzed and uses from benchmarks, to implementation until the need to implement a solution which will fit the needs and requirements. (ie. LevelDB, RocksDB, Cassandra, ScyllaDB, Aerospike, Redis, etc)
 
 There are multiple database engines which provides different needs, but we wanted to focus on NoSQL and efficient disk amangement and writes. 
 

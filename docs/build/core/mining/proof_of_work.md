@@ -3,7 +3,7 @@ id: proof-of-work
 title: Proof of Work algorithm
 ---
 
-The Arch Ethic's proof of work algorithm defines a way to assert the validity of the origin signature.
+The Archethic's proof of work algorithm defines a way to assert the validity of the origin signature.
 
 It defines two main components:
 

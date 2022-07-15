@@ -11,24 +11,19 @@ It describes a wallet that is stored encrypted on-chain, as only you and the aut
 
 Technically speaking, this wallet - also referenced as `Decentralized Identity` - is made up of a randomly generated `seed` (root key) from which it's possible to generate all keys according to a path of derivation. 
 
-So for any access to a service or an application, a key will be generated on the fly from the `seed` (root key) and the first public key associated with a service or an application.
-
-Thus allowing the creation of an infinite number of identities without even having to store related keys. 
+So for any access to a service or an application, a key will be generated on the fly from the `seed` (root key) and the first public key associated with a service or an application. Thus allowing the creation of an infinite number of identities without even having to store related keys. 
 
 ![](/img/keychain-seed-paths.svg)
 
 ## End-to-end encryption
 
-While this wallet or keychain is on-chain, it remains secure as no other party (at least non-authorized) can access it with service keys. 
-
-This is possible as we are using end-to-end encryption and elliptic curve cryptography.
+While this wallet or keychain is on-chain, it remains secure as no other party (at least non-authorized) can access it with service keys. This is possible as we are using end-to-end encryption and elliptic curve cryptography.
 
 Each keychain/wallet generated is embedded into a transaction encrypted using an AES key itself encrypted with a list of authorized keys or authenticated access (biometric, smartphone, USB, etc.)
 
-Once generated, we also create transactions for the access of this keychain.
-So in other words, each access has its transaction chain, where the keychain's location is encrypted as well.
+Once generated, we also create transactions for the access of this keychain. In other words, each access has its transaction chain, where the keychain's location is encrypted as well.
 
-Then to retrieve or access your keychain, your authentication method should retrieve its transaction chain, then decrypt the keychain's location, download the keychain transaction and finally decrypt the keychain with the right AES key.
+In the next step, to retrieve or access the keychain, the authentication method should retrieve its transaction chain,  decrypt the keychain's location, download the keychain transaction and finally decrypt the keychain with the right AES key.
 
 This avoids disclosure of critical information and prevents unauthorized access.
 
