@@ -65,7 +65,7 @@ It returns the public key derived from the hardware ledger device seed (**HARDWA
     
 - Function Signature
     **deriveArchethicKeyPair(cx_curve_t curve, uint32_t coin_type, uint32_t account, uint32_t address_index, uint8_t \*masterSeed, uint8_t masterSeedLen, cx_ecfp_private_key_t \*privateKey, cx_ecfp_public_key_t \*publicKey)**
-    - This function first checks the curve type of the `cx_curve_t`, which sets the mode for the which it needs to perform operation.
+    - This function first checks the curve type of the `cx_curve_t`, which sets the mode for  which it needs to perform operation.
     - Next depending upon the account type as defined in the specification (0xffff | 0x0000) it derives the private key from the masterseed.
         - When the account type is `0xffff` then **os_perso_derive_node_with_seed()** function is called which derives the key from the ledger hardware origin key.
         - When account type is `0x0000` then it derives the rawPrivateKey from the from **archethic_derive_with_seed_key()** function which derives the key as per provided params.
@@ -136,7 +136,7 @@ ewk<sub>aes</sub> = encrypted wallet key
             + This returns the bip44Path in `char* string_bip_44`
         + Now Generate Archethic Address from the Encoded Wallet and set as required. 
             + Fn Signature **generateArchethicAddress(uint8_t hash_type, uint32_t address_index, uint8_t \*encoded_wallet, uint8_t \*wallet_len, uint32_t sequence_no, uint8_t \*address, uint8_t \*address_len)**
-            + For now only support hash_type `sha256`
+            + Currently it only supports hash_type `sha256`
             + Returns address in `uint8_t *address`
                 + It generates key from the encoded wallet and storesit in `cx_ecfp_public_key_t` structure
                 + Fn Signature **generateKeyFromWallet(address_index, encoded_wallet, wallet_len, sequence_no, &curve_type, NULL, &publicKey)** 

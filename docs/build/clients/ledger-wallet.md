@@ -8,7 +8,7 @@ title: Ledger wallet
 A blockchain or crypto wallet is a way to manage, secure, and use cryptocurrencies such as UCO, Bitcoin, Ethereum and other digital assets based on a blockchain (for example, an NFT). 
 There are two basic types of blockchain wallets: software wallets and hardware wallets.
 
-Types of software wallets include web (or crypto exchange) wallets, mobile wallets, and desktop wallets. A hardware wallet is a physical device that secures access to your cryptos offline ([source](https://www.fool.com/investing/stock-market/market-sectors/financials/blockchain-stocks/blockchain-wallet/#:~:text=There%20are%20two%20basic%20types,access%20to%20your%20cryptos%20offline.)). This guide explains interaction and testing of hardware wallet, specifically the Ledger Device (Nano S) with archethic testnet.
+Types of software wallets include web (or crypto exchange) wallets, mobile wallets, and desktop wallets. A hardware wallet is a physical device that secures access to your cryptos offline ([source](https://www.fool.com/investing/stock-market/market-sectors/financials/blockchain-stocks/blockchain-wallet/#:~:text=There%20are%20two%20basic%20types,access%20to%20your%20cryptos%20offline.)). This guide explains interaction and testing of hardware wallet, specifically the Ledger Device (Nano S) with Archethic testnet.
 
 A Ledger Device is a hardware root of trust based wallet that is considered one of the most secure ways to store your digital assets. Ledger uses an offline, or cold storage, method of generating private keys, making it a preferred method for many crypto users. 
 
@@ -23,7 +23,7 @@ As given in the figure, there are 3 important components inorder to support ledg
     This is the application which acts like a bridge of communication between user/blockchain and the Bolos application mentioned above. For Archethic's blockchain, this is [ALCA (CLI)](https://github.com/archethic-foundation/ledger-cli-app) and Flutter based [Wallet (GUI)](https://github.com/archethic-foundation/archethic_wallet).
     
 - Remote backend
-    This is the node which accepts data (signed transactions) from the Companion app mentioned above inorder to include it into the blockchain. For Archethic's blockchain, it is the testnet node. Once transaction is published, the data can be verified on [archethic.net](https://testnet.archethic.net/explorer).
+    This is the node which accepts data (signed transactions) from the Companion app mentioned above inorder to include it into the blockchain. For Archethic's blockchain, it is the testnet node. Once transaction is published, the data can be verified on [Archethic.net](https://testnet.archethic.net/explorer).
     
     
 ## Synopsis

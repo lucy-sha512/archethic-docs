@@ -43,7 +43,7 @@ Your identity is your right. The security and threat issues that centralized sys
 
 Have you ever wondered how many times your identity is exploited without your knowledge by centralized monopolies or even your favorite merchant site? The world wants you to believe that ownership doesn’t matter. We are here to change that narrative.
 
-With Archethic, you can access your identity but no one owns it. 
+With Archethic, you can access your identity but no one owns it except you. 
 Identity is not just about ownership but control and freedom. 
 
 Archethic provides interoperable [decentralized identity management](/learn/decentralized-id) using both the traditional key management as well as our crypto-biometrics key management solution. 

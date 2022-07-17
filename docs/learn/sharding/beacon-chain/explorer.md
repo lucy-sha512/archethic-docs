@@ -16,7 +16,7 @@ A slot is responsible for a transaction being added to the Beacon Chain and shar
 
 ### Epoch
 
-It is a time interval within the Archethic network for the Beacon chain subsets.One epoch may be having many slots based on a slot timer interval. At each epoch, a new transaction has an emitter that summarizes the entire epoch.
+It is a time interval within the Archethic network for the Beacon chain subsets. One epoch may be having many slots based on a slot timer interval. At each epoch, a new transaction has an emitter that summarizes the entire epoch.
 
 Epoch interval may differ between mainnet, testnet, or development. For instance, mainnet epoch interval is daily while testnet for now is each minute to ease the integration and simulation of the network.
 
